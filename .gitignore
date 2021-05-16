@@ -1,0 +1,8 @@
+.venv
+
+everydayPlus/everydayPlus/__pycache__
+everydayPlus/yearsGoal/__pycache__
+everydayPlus/yearsGoal/migrations
+
+# DB
+everydayPlus/db.sqlite3
