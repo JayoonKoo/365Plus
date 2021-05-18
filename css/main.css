@@ -1,0 +1,51 @@
+/* COMMON */
+body {
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: 'Nanum Gothic', sans-serif;
+  height: 2000px;
+}
+img {
+  display: block;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  background-color: #dfe6e9;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+}
+header .inner {
+  display: flex;
+  align-items: center;
+}
+header .logo img{
+  width: 50px;
+}
+header nav {
+  display: flex;
+  position: absolute;
+  right: 0;
+}
+header nav a {
+  font-size: 20px;
+  padding: 0 30px 0;
+  display: block;
+  color: #656565;
+}
+header nav a:hover {
+  color: #333;
+}
