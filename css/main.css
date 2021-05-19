@@ -39,6 +39,7 @@ header nav {
   display: flex;
   position: absolute;
   right: 0;
+  align-items: center;
 }
 header nav a {
   font-size: 20px;
@@ -48,4 +49,36 @@ header nav a {
 }
 header nav a:hover {
   color: #333;
+}
+header nav .search {
+  display: flex;
+  position: relative;
+}
+header nav .search input {
+  width: 30px;
+  height: 30px;
+  padding: 4px 10px;
+  border: 1px solid #656565;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  background-color: #fff;
+  transition: .4s;
+}
+header nav .search input:focus {
+  width: 350px; 
+  /* border-color: ; */
+}
+header nav .search .material-icons {
+  height: 24px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 2px;
+  margin: auto;
+  cursor: pointer;
+  transition: .4s;
+}
+header nav .search.focused .material-icons {
+  opacity: 0;
 }
