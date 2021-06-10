@@ -9,26 +9,35 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
     />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/base.css" />
     <script defer src="./js/username.js"></script>
+    <script defer src="./js/clock.js"></script>
+    <script defer src="./js/todo.js"></script>
   </head>
   <body>
-    <section class="user-info">
-      <div class="inner">
-        <div class="container">
-          <form id="user-form" class="hidden">
+    <h1 class="title">365+</h1>
+    <div class="inner">
+      <section>
+        <div class="header-container">
+          <div class="clock"></div>
+          <form id="todo-form">
+            <input type="text" placeholder="Todays's Work">
+          </form>
+          <div id="greeting" class="hidden"></div>
+          <form class="hidden" id="login-form">
             <input
+              type="text"
               required
               maxlength="15"
-              class="username"
-              type="text"
-              placeholder="이름을 알려주세요"
+              placeholder="What's your name?"
+              class="login--name"
             />
-            <input type="submit" value="🔍" />
           </form>
-          <h1 class="hello hidden"></h1>
         </div>
-      </div>
-    </section>
+      </section>
+      <section class="section--todo">
+        <ul class="todo-list"></ul>
+      </section>
+    </div>
   </body>
 </html>

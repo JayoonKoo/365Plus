@@ -1,0 +1,124 @@
+/* COMMON */
+body {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: 'Nanum Gothic', sans-serif;
+  background: #000;
+}
+
+.title {
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.inner {
+  width: 1500px;
+  height: 800px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  position: absolute;
+  background: rgb(24, 26, 30);
+}
+
+
+#login-form {
+  width: auto;
+}
+
+#login-form .login--name {
+  color: #fff;
+  height: 30px;
+  width: 200px;
+  background: rgb(42, 43, 48);
+  border: none;
+}
+
+#login-form .login--name:focus {
+  outline: none;
+}
+
+.header-container {
+  margin: 50px auto 0;
+  width: 90%;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.inner .header-container .clock {
+  font-style: italic;
+  font-size: 20px;
+}
+
+
+#todo-form input{
+  background: rgb(42, 43, 48);
+  border: none;
+  height: 30px;
+  width: 600px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+#todo-form input:focus{
+  outline: none;
+}
+
+
+/* todo-list */
+.section--todo {
+  width: 90%;
+  height: 80%;
+  margin: 30px auto;
+  overflow: auto;
+}
+
+.section--todo .todo-list .container {
+  font-size: 18px;
+  background: rgb(42, 43, 48);
+  width: 100%;
+  height: 60px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.section--todo .todo-list .container li{
+  margin: 0 20px 0 auto;
+  width: 96%;
+  display: flex;
+  align-items: center;
+}
+.section--todo .todo-list .container span:first-child{
+  font-size: 14px;
+  flex: none;
+  margin-right: 150px;
+}
+.section--todo .todo-list .container button{
+  width: 100px;
+  height: 40px;
+  color: #fff;
+  background: rgb(138, 190, 75);
+  margin-left: auto;
+  cursor: pointer;
+}
+.section--todo .todo-list .container button:hover{
+  background: rgb(106, 146, 58);
+}

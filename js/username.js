@@ -1,28 +1,28 @@
-const userForm = document.querySelector("#user-form");
-const userInput = document.querySelector("#user-form input");
-const hello = document.querySelector(".hello");
+const loginForm = document.getElementById("login-form");
+const loginInput = loginForm.querySelector("input");
+const greeting = document.getElementById("greeting");
 
-const USERNAME_CN = "userName";
-const HIDDEN_CN = "hidden";
+const USER_KEY = 'userName';
+const HIDDEN_CN = 'hidden';
 
-const currentUserName = localStorage.getItem(USERNAME_CN);
-
-if (currentUserName === null) {
-  userForm.classList.remove(HIDDEN_CN);
-  userForm.addEventListener("submit", getUserName);
-} else {
-  setHello(currentUserName);
-}
-
-function getUserName(event) {
+function loginSubmit(event) {
   event.preventDefault();
-  const inputUserName = userInput.value;
-  localStorage.setItem(USERNAME_CN, inputUserName);
-  userForm.classList.add(HIDDEN_CN);
-  setHello(inputUserName)
+  const userName = loginInput.value;
+  localStorage.setItem(USER_KEY, userName);
+  loginForm.classList.add(HIDDEN_CN);
+  paintUserName(userName);
 }
 
-function setHello (userName) {
-  hello.classList.remove(HIDDEN_CN);
-  hello.innerText = `어서오세요!😄 ${userName}님.`;
+function paintUserName(userName) {
+  greeting.innerText = `Hello ${userName}`;
+  greeting.classList.remove(HIDDEN_CN);
+}
+
+const savedUserName = localStorage.getItem(USER_KEY);
+
+if (savedUserName === null) {
+  loginForm.classList.remove(HIDDEN_CN);
+  loginForm.addEventListener("submit", loginSubmit);
+} else {
+  paintUserName(savedUserName);
 }
