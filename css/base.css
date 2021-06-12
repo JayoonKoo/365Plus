@@ -68,12 +68,11 @@ body {
 }
 
 .header {
-	width: 90%;
-  margin: 50px auto 0;
+  margin: 50px 75px 0;
 }
 
 .header.resize {
-	width: 95%;
+	margin-right: 20px;
 }
 
 .header-container {
@@ -109,14 +108,13 @@ body {
 
 /* todo-list */
 .section--todo {
-  width: 90%;
   height: 80%;
-  margin: 30px auto;
+  margin: 30px 75px;
   overflow: auto;
 }
 
 .section--todo.resize {
-	width: 95%;
+	margin-right: 20px;
 }
 
 .section--todo .todo-list .container {
@@ -154,5 +152,5 @@ body {
 }
 
 .menu {
-	margin: 50px auto 0;
+	margin: 50px 0 0;
 }

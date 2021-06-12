@@ -4,7 +4,6 @@ const header= document.querySelector(".header");
 const todo = document.querySelector(".section--todo");
 
 toggleBtn.addEventListener("click", () => {
-	console.log(header);
 	toggle.classList.toggle('hidden');
 	header.classList.toggle('resize');
 	todo.classList.toggle('resize');
