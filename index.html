@@ -9,35 +9,46 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
     />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="css/base.css" />
     <script defer src="./js/username.js"></script>
     <script defer src="./js/clock.js"></script>
     <script defer src="./js/todo.js"></script>
+    <script defer src="./js/toggle.js"></script>
   </head>
   <body>
     <h1 class="title">365+</h1>
-    <div class="inner">
-      <section>
-        <div class="header-container">
-          <div class="clock"></div>
-          <form id="todo-form">
-            <input type="text" placeholder="Todays's Work">
-          </form>
-          <div id="greeting" class="hidden"></div>
-          <form class="hidden" id="login-form">
-            <input
-              type="text"
-              required
-              maxlength="15"
-              placeholder="What's your name?"
-              class="login--name"
-            />
-          </form>
-        </div>
-      </section>
-      <section class="section--todo">
-        <ul class="todo-list"></ul>
-      </section>
-    </div>
+    <div class="main">
+			<div class="inner">
+				<section class="header">
+					<div class="header-container">
+						<div class="clock"></div>
+						<form id="todo-form">
+							<input type="text" placeholder="Todays's Work">
+						</form>
+						<div id="greeting" class="hidden"></div>
+						<form class="hidden" id="login-form">
+							<input
+								type="text"
+								required
+								maxlength="15"
+								placeholder="What's your name?"
+								class="login--name"
+							/>
+						</form>
+					</div>
+				</section>
+				<section class="section--todo">
+					<ul class="todo-list"></ul>
+				</section>
+			</div>
+			<div class="menu hidden">
+				<div>로그아웃</div>
+				<div>완료한것</div>
+				<div>모두지우기</div>
+			</div>
+		</div>
+
   </body>
 </html>

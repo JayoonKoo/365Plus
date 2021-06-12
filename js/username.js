@@ -2,8 +2,8 @@ const loginForm = document.getElementById("login-form");
 const loginInput = loginForm.querySelector("input");
 const greeting = document.getElementById("greeting");
 
-const USER_KEY = 'userName';
-const HIDDEN_CN = 'hidden';
+const USER_KEY = "userName";
+const HIDDEN_CN = "hidden";
 
 function loginSubmit(event) {
   event.preventDefault();
@@ -14,7 +14,17 @@ function loginSubmit(event) {
 }
 
 function paintUserName(userName) {
-  greeting.innerText = `Hello ${userName}`;
+	// icon
+  const icon = document.createElement("span");
+  icon.classList.add("material-icons");
+  icon.classList.add("toggle-btn");
+  icon.innerText = "menu";
+	// hello
+	const hello = document.createElement("span");
+	hello.innerText = `Hello ${userName}`;
+
+  greeting.appendChild(hello);
+  greeting.appendChild(icon);
   greeting.classList.remove(HIDDEN_CN);
 }
 

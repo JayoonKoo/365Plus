@@ -16,10 +16,12 @@ body {
 }
 
 .hidden {
-  display: none;
+  display: none; 
 }
 
-.inner {
+
+.main {
+	display: flex;
   width: 1500px;
   height: 800px;
   margin: auto;
@@ -31,6 +33,23 @@ body {
   background: rgb(24, 26, 30);
 }
 
+.inner {
+	width: 100%;
+}
+
+#greeting {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#greeting span:first-child{
+	margin-right: 10px;
+}
+
+#greeting span:last-child {
+	cursor: pointer;
+}
 
 #login-form {
   width: auto;
@@ -48,9 +67,17 @@ body {
   outline: none;
 }
 
-.header-container {
+.header {
+	width: 90%;
   margin: 50px auto 0;
-  width: 90%;
+}
+
+.header.resize {
+	width: 95%;
+}
+
+.header-container {
+  width: 100%;
   display: flex;
   position: relative;
   justify-content: space-between;
@@ -58,8 +85,7 @@ body {
 }
 
 
-
-.inner .header-container .clock {
+.main .header-container .clock {
   font-style: italic;
   font-size: 20px;
 }
@@ -87,6 +113,10 @@ body {
   height: 80%;
   margin: 30px auto;
   overflow: auto;
+}
+
+.section--todo.resize {
+	width: 95%;
 }
 
 .section--todo .todo-list .container {
@@ -121,4 +151,8 @@ body {
 }
 .section--todo .todo-list .container button:hover{
   background: rgb(106, 146, 58);
+}
+
+.menu {
+	margin: 50px auto 0;
 }
